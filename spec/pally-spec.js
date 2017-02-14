@@ -6,4 +6,6 @@ const app = require('../app/pally.js');
   it('bob should return true', function() {
     expect(pali("bob")).toBeTruthy();
   });
+
+});
   
