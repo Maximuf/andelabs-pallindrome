@@ -16,8 +16,14 @@ const app = require('../app/pally.js');
     expect(app.pali("mother")).toEqual(expectedCount);
   });
 
-   it('bob should return mother', function() {
+   it('123321 should be truthy', function() {
     expect(app.pali("123321")).toBeTruthy();
   });
+
+   it('should return invalid input for unAnticipated Inputs', function() {
+   	const expectedCount = "Invalid input, expecting a string!";
+    expect(app.pali("{[1237&556]}")).toEqual(expectedCount);
+  });
+
 });
   
