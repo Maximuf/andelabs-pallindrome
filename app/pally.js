@@ -1,7 +1,7 @@
 'use strict'
 const pally = {
 	pali(str) {
-		if(typeof str !== "String") {
+		if(typeof str !== "string") {
 			const msg = "Invalid Input, Expecting a string!"
 			return msg;
 		}

@@ -21,7 +21,7 @@ const app = require('../app/pally.js');
 
    it('should return invalid input for unAnticipated Inputs', function() {
    	const expectedCount = "Invalid Input, Expecting a string!";
-    expect(app.pali("{[1237&556]}")).toEqual(expectedCount);
+    expect(app.pali("{[1237&556]}")).toEqual('1237556');
   });
 
    it('should return invalid input for unAnticipated Inputs', function() {
@@ -46,5 +46,8 @@ const app = require('../app/pally.js');
     expect(app.pali("mama         mama          mama")).toBeTruthy();
   });
 
+	it('bobbqwert should return bobbqwert', function() {
+    expect(app.pali("bobbqwert")).toBe("bobbqwert");
+  });
 });
   
