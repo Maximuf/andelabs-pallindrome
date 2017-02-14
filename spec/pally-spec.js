@@ -42,8 +42,8 @@ const app = require('../app/pally.js');
     expect(app.pali("<[o_o]>")).toBeTruthy();
   });
 
-  it('mama         mama          mama should be truthy', function() {
-    expect(app.pali("mama         mama          mama")).toBeTruthy();
+  it('mama  ---  mama //  mama should be truthy', function() {
+    expect(app.pali("mama  ---  mama //  mama")).toBeTruthy();
   });
 
 	it('bobbqwert should return bobbqwert', function() {
