@@ -1,4 +1,3 @@
-(function(){
   'use strict'
 const app = require('../app/pally.js');
 
@@ -8,5 +7,3 @@ const app = require('../app/pally.js');
     expect(pali("bob")).toBeTruthy();
   });
   
- 
-});
